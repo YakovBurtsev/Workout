@@ -42,7 +42,7 @@ public class WorkoutDetailFragment extends Fragment {
             title.setText(workout.getName());
 
             TextView description = view.findViewById(R.id.textDescription);
-            description.setText(workout.getName());
+            description.setText(workout.getDescription());
         }
     }
 }
