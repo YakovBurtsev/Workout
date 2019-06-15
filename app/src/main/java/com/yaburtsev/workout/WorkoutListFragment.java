@@ -35,7 +35,7 @@ public class WorkoutListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         if (listener != null) {
-            listener.itemClicked((int)id);
+            listener.itemClicked((int) id);
         }
     }
 
