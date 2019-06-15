@@ -16,10 +16,12 @@ public class DetailActivity extends AppCompatActivity {
                 .findFragmentById(R.id.detail_fragment);
 
         if (fragment != null) {
-            int workoutId = getIntent().getExtras().getInt(EXTRA_WORKOUT_ID);
-            fragment.setWorkoutId(workoutId);
+            Bundle extras = getIntent().getExtras();
+            if (extras != null) {
+                int workoutId = extras.getInt(EXTRA_WORKOUT_ID);
+                fragment.setWorkoutId(workoutId);
+            }
         }
     }
-
 
 }

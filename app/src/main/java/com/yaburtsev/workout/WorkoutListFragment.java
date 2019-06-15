@@ -17,7 +17,7 @@ import android.widget.ListView;
 public class WorkoutListFragment extends ListFragment {
 
     interface Listener {
-        void itemClicked(long id);
+        void itemClicked(int id);
     }
 
     private Listener listener;
@@ -35,7 +35,7 @@ public class WorkoutListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         if (listener != null) {
-            listener.itemClicked(id);
+            listener.itemClicked((int)id);
         }
     }
 
