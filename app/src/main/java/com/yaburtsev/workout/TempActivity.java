@@ -13,7 +13,7 @@ public class TempActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.add(R.id.fragment_container, new StopwatchFragment());
+            ft.add(R.id.stopwatch_container, new StopwatchFragment());
             ft.addToBackStack(null);
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             ft.commit();
